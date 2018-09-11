@@ -15,9 +15,13 @@ Works only in python implementations where `float` is IEEE754 64-bit float.
 Given a 64-bit float `f`, returns the minimal representable float that is greater than `f`.
 
 Irregulars:
+
     - `inf` => `nan`
+    
     - `float.max` => `inf`
+    
     - `-inf` => `-float.max`
+    
     - `nan` => `nan`
 
 ### previous_float64
@@ -27,9 +31,13 @@ Irregulars:
 Given a 64-bit float `f`, returns the maximal representable float that is smaller then `f`.
 
 Irregulars:
+
     - `-inf` => `nan`
+    
     - `-float.max` => `-inf`
+    
     - `inf` => `float.max`
+    
     - `nan` => `nan`
 
 ## Installation
